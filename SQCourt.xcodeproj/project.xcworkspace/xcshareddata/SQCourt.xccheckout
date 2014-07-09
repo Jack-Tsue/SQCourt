@@ -5,41 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F06EB650-FC38-4AF6-A6AF-D61343C40B80</string>
+	<string>BA0D060D-F6D8-4657-889B-C40038AD41F0</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SQCourt</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>59BE1C30-7182-472D-BC38-9BF16A4899EA</key>
-		<string>svn://192.168.68.30/Repository/%E5%BC%80%E5%8F%91%E5%BA%93/%E6%B1%9F%E8%8B%8F%E9%A1%B9%E7%9B%AE/%E5%AE%BF%E8%BF%81%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%8F%B0</string>
+		<key>2CB2A2EC-5055-4ECE-8597-3123700DA21B</key>
+		<string>ssh://github.com/Jack-Tsue/SQCourt.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>源代码/Apple/SQCourt/SQCourt.xcodeproj/project.xcworkspace</string>
+	<string>SQCourt.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>59BE1C30-7182-472D-BC38-9BF16A4899EA</key>
-		<string>../../../../..</string>
-	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>59BE1C30-7182-472D-BC38-9BF16A4899EA</key>
-		<string>svn://192.168.68.30</string>
+		<key>2CB2A2EC-5055-4ECE-8597-3123700DA21B</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>svn://192.168.68.30/Repository/%E5%BC%80%E5%8F%91%E5%BA%93/%E6%B1%9F%E8%8B%8F%E9%A1%B9%E7%9B%AE/%E5%AE%BF%E8%BF%81%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%8F%B0/%E6%BA%90%E4%BB%A3%E7%A0%81/IOS/SQCourt/SQCourt.xcodeproj</string>
+	<string>ssh://github.com/Jack-Tsue/SQCourt.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>59BE1C30-7182-472D-BC38-9BF16A4899EA</string>
+	<string>2CB2A2EC-5055-4ECE-8597-3123700DA21B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>59BE1C30-7182-472D-BC38-9BF16A4899EA</string>
+			<string>2CB2A2EC-5055-4ECE-8597-3123700DA21B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>宿迁移动平台</string>
+			<string>SQCourt</string>
 		</dict>
 	</array>
 </dict>

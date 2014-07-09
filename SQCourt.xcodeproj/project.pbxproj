@@ -16,7 +16,6 @@
 		852DED791962A28D0005B51D /* JudgeContactHomeTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 852DED781962A28D0005B51D /* JudgeContactHomeTableVC.m */; };
 		852DED7D1964E46E0005B51D /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 852DED7C1964E46E0005B51D /* SSKeychain.m */; };
 		852DED80196683640005B51D /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 852DED7F196683640005B51D /* NewsCell.m */; };
-		853B055B195AB23A000B93F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853B055A195AB23A000B93F6 /* Images.xcassets */; };
 		8541905218F4EBE100C59608 /* CaseCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8541905118F4EBE100C59608 /* CaseCalculatorViewController.m */; };
 		854713AF18CF4A8F00AFCA1C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 854713AE18CF4A8F00AFCA1C /* MapViewController.m */; };
 		854F55961928BAE900E203AD /* JSBubbleMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 854F554E1928BAE900E203AD /* JSBubbleMessageCell.m */; };
@@ -113,6 +112,7 @@
 		858F02AB18F6884E00A83656 /* star0.png in Resources */ = {isa = PBXBuildFile; fileRef = 858F02A818F6884E00A83656 /* star0.png */; };
 		85927DE318E1A3850038BE0E /* SQCourtChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 85927DE218E1A3850038BE0E /* SQCourtChange.m */; };
 		85927DE618E1BD390038BE0E /* CourtChangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85927DE518E1BD390038BE0E /* CourtChangeCell.m */; };
+		8592FBB0196BF44E002C3B2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8592FBAF196BF44E002C3B2B /* Images.xcassets */; };
 		85930C0E19065100003C5A9A /* ConversationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85930C0D19065100003C5A9A /* ConversationTableViewController.m */; };
 		85930C12190654C3003C5A9A /* ConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85930C11190654C3003C5A9A /* ConversationCell.m */; };
 		859482CA19249E4400F8B678 /* UserSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 859482C919249E4400F8B678 /* UserSingleton.m */; };
@@ -168,8 +168,6 @@
 		85F194B018BB32B9007B5FC2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F194AF18BB32B9007B5FC2 /* XCTest.framework */; };
 		85F194B118BB32B9007B5FC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F1948D18BB32B8007B5FC2 /* Foundation.framework */; };
 		85F194B218BB32B9007B5FC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F1949118BB32B8007B5FC2 /* UIKit.framework */; };
-		85F194BA18BB32B9007B5FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85F194B818BB32B9007B5FC2 /* InfoPlist.strings */; };
-		85F194BC18BB32B9007B5FC2 /* SQCourtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F194BB18BB32B9007B5FC2 /* SQCourtTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,13 +199,11 @@
 		852DED7C1964E46E0005B51D /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		852DED7E196683640005B51D /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
 		852DED7F196683640005B51D /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
-		853B055A195AB23A000B93F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8541905018F4EBE100C59608 /* CaseCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaseCalculatorViewController.h; path = ViewController/CaseCalculatorViewController.h; sourceTree = "<group>"; };
 		8541905118F4EBE100C59608 /* CaseCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CaseCalculatorViewController.m; path = ViewController/CaseCalculatorViewController.m; sourceTree = "<group>"; };
 		854713AD18CF4A8F00AFCA1C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ViewController/MapViewController.h; sourceTree = "<group>"; };
 		854713AE18CF4A8F00AFCA1C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ViewController/MapViewController.m; sourceTree = "<group>"; };
 		854A0A5C19404AB800475FC3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		854A0A5D19404AB900475FC3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		854F554D1928BAE900E203AD /* JSBubbleMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBubbleMessageCell.h; sourceTree = "<group>"; };
 		854F554E1928BAE900E203AD /* JSBubbleMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBubbleMessageCell.m; sourceTree = "<group>"; };
 		854F554F1928BAE900E203AD /* JSBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBubbleView.h; sourceTree = "<group>"; };
@@ -345,6 +341,7 @@
 		85927DE218E1A3850038BE0E /* SQCourtChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQCourtChange.m; sourceTree = "<group>"; };
 		85927DE418E1BD390038BE0E /* CourtChangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourtChangeCell.h; path = View/CourtChangeCell.h; sourceTree = "<group>"; };
 		85927DE518E1BD390038BE0E /* CourtChangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourtChangeCell.m; path = View/CourtChangeCell.m; sourceTree = "<group>"; };
+		8592FBAF196BF44E002C3B2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		85930C0C19065100003C5A9A /* ConversationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConversationTableViewController.h; path = ViewController/ConversationTableViewController.h; sourceTree = "<group>"; };
 		85930C0D19065100003C5A9A /* ConversationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConversationTableViewController.m; path = ViewController/ConversationTableViewController.m; sourceTree = "<group>"; };
 		85930C0F190653C4003C5A9A /* SQCourt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SQCourt.entitlements; sourceTree = "<group>"; };
@@ -444,8 +441,6 @@
 		85F1949D18BB32B8007B5FC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		85F194AE18BB32B9007B5FC2 /* SQCourtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQCourtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F194AF18BB32B9007B5FC2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		85F194B718BB32B9007B5FC2 /* SQCourtTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SQCourtTests-Info.plist"; sourceTree = "<group>"; };
-		85F194BB18BB32B9007B5FC2 /* SQCourtTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQCourtTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -868,7 +863,6 @@
 			children = (
 				85930C0F190653C4003C5A9A /* SQCourt.entitlements */,
 				85F1949318BB32B8007B5FC2 /* SQCourt */,
-				85F194B518BB32B9007B5FC2 /* SQCourtTests */,
 				85F1948C18BB32B8007B5FC2 /* Frameworks */,
 				85F1948B18BB32B8007B5FC2 /* Products */,
 			);
@@ -907,7 +901,7 @@
 				85F1949C18BB32B8007B5FC2 /* AppDelegate.h */,
 				85F1949D18BB32B8007B5FC2 /* AppDelegate.m */,
 				856A2D6618D8124300E603A0 /* Main.storyboard */,
-				853B055A195AB23A000B93F6 /* Images.xcassets */,
+				8592FBAF196BF44E002C3B2B /* Images.xcassets */,
 				85F1949418BB32B8007B5FC2 /* Supporting Files */,
 			);
 			path = SQCourt;
@@ -929,24 +923,6 @@
 				85F1949618BB32B8007B5FC2 /* InfoPlist.strings */,
 				85F1949918BB32B8007B5FC2 /* main.m */,
 				85F1949B18BB32B8007B5FC2 /* SQCourt-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		85F194B518BB32B9007B5FC2 /* SQCourtTests */ = {
-			isa = PBXGroup;
-			children = (
-				85F194BB18BB32B9007B5FC2 /* SQCourtTests.m */,
-				85F194B618BB32B9007B5FC2 /* Supporting Files */,
-			);
-			path = SQCourtTests;
-			sourceTree = "<group>";
-		};
-		85F194B618BB32B9007B5FC2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				85F194B718BB32B9007B5FC2 /* SQCourtTests-Info.plist */,
-				85F194B818BB32B9007B5FC2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1054,7 +1030,7 @@
 				854F55B51928BAE900E203AD /* bubble-square-incoming-selected@2x.png in Resources */,
 				854F55C31928BAE900E203AD /* input-field@2x.png in Resources */,
 				854F55A81928BAE900E203AD /* bubble-default-outgoing.png in Resources */,
-				853B055B195AB23A000B93F6 /* Images.xcassets in Resources */,
+				8592FBB0196BF44E002C3B2B /* Images.xcassets in Resources */,
 				85984BAA18CC48E40024850E /* notice.xml in Resources */,
 				854F55AE1928BAE900E203AD /* bubble-flat-outgoing-old.png in Resources */,
 				854F55A51928BAE900E203AD /* bubble-default-outgoing-green@2x.png in Resources */,
@@ -1105,7 +1081,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85F194BA18BB32B9007B5FC2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1217,7 +1192,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85F194BC18BB32B9007B5FC2 /* SQCourtTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1236,14 +1210,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				854A0A5C19404AB800475FC3 /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		85F194B818BB32B9007B5FC2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				854A0A5D19404AB900475FC3 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1332,13 +1298,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TEST/SQCourt-Prefix.pch";
+				GCC_PREFIX_HEADER = "SQCourt/SQCourt-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = "TEST/SQCourt-Info.plist";
+				INFOPLIST_FILE = "SQCourt/SQCourt-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = SQCourt;
 				PROVISIONING_PROFILE = "";
@@ -1355,13 +1321,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TEST/SQCourt-Prefix.pch";
+				GCC_PREFIX_HEADER = "SQCourt/SQCourt-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = "TEST/SQCourt-Info.plist";
+				INFOPLIST_FILE = "SQCourt/SQCourt-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = SQCourt;
 				PROVISIONING_PROFILE = "";

@@ -44,7 +44,7 @@
     
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
         [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObject:TINTBLUE forKey:UITextAttributeTextColor]];
-        self.scrollView.frame = CGRectMake(0, 0, 320, 500);
+        self.scrollView.frame = CGRectMake(0, 0, 320, 520);
         self.scrollView.contentSize = CGSizeMake(320, 560);
     } else {
         
@@ -87,11 +87,6 @@
     NSTimeInterval timeInterval =5.0 ;
     //定时器 repeats 表示是否需要重复，NO为只重复一次
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(moveGallery) userInfo:nil repeats:YES];
-    
-    
-    if ([[UIScreen mainScreen] bounds].size.height > 500) {
-        self.scrollView.scrollEnabled = NO;
-    }
     
     [_askBtn addTarget:self action:@selector(askBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [_judgementBtn addTarget:self action:@selector(judgementBtnClick:) forControlEvents:UIControlEventTouchUpInside];
