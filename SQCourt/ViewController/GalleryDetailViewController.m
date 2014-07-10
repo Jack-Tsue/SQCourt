@@ -38,24 +38,26 @@
     [self.scrollView setScrollEnabled:YES];
     NSMutableArray *picArray = [[NSMutableArray alloc] init];
     UIImage *galleryImg0 = [UIImage imageNamed:@"detail0"];
-    UIImage *galleryImg1 = [UIImage imageNamed:@"detail11"];
+    UIImage *galleryImg1 = [UIImage imageNamed:@"detail1"];
     UIImage *galleryImg2 = [UIImage imageNamed:@"detail2"];
     UIImage *galleryImg3 = [UIImage imageNamed:@"detail3"];
     UIImage *galleryImg4 = [UIImage imageNamed:@"detail4"];
-    
+    UIImage *galleryImg5 = [UIImage imageNamed:@"detail5"];
+
     [picArray addObject:galleryImg0];
     [picArray addObject:galleryImg1];
     [picArray addObject:galleryImg2];
     [picArray addObject:galleryImg3];
     [picArray addObject:galleryImg4];
-    
+    [picArray addObject:galleryImg5];
+
     CGRect galleryRect;
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
         galleryRect = CGRectMake(0, 0, 320, 360);
     } else {
         galleryRect = CGRectMake(0, 0, 320, 360);
     }
-    EScrollerView *scroller=[[EScrollerView alloc] initWithFrameRect:galleryRect ImageArray:[NSArray arrayWithObjects:@"detail0",@"detail11",@"detail2", @"detail3",@"detail4", nil] TitleArray:[NSArray arrayWithObjects:@"新闻1",@"新闻2",@"新闻3", @"新闻4", @"新闻5", nil]];
+    EScrollerView *scroller=[[EScrollerView alloc] initWithFrameRect:galleryRect ImageArray:[NSArray arrayWithObjects:@"detail0",@"detail11",@"detail2", @"detail3",@"detail4", @"detail5", nil] TitleArray:[NSArray arrayWithObjects:@"新闻1",@"新闻2",@"新闻3", @"新闻4", @"新闻5", @"新闻6", nil]];
     scroller.delegate = self;
     [scroller naviToPage:_index];
     [self.scrollView setScrollEnabled:NO];

@@ -58,28 +58,22 @@
     UIImage *galleryImg2 = [UIImage imageNamed:@"gallery2"];
     UIImage *galleryImg3 = [UIImage imageNamed:@"gallery3"];
     UIImage *galleryImg4 = [UIImage imageNamed:@"gallery4"];
+    UIImage *galleryImg5 = [UIImage imageNamed:@"gallery5"];
 
     [picArray addObject:galleryImg0];
     [picArray addObject:galleryImg1];
     [picArray addObject:galleryImg2];
     [picArray addObject:galleryImg3];
     [picArray addObject:galleryImg4];
+    [picArray addObject:galleryImg5];
 
-    picDetails = [[NSMutableArray alloc] init];
-
-    [picDetails addObject:@"GalleryDetail1"];
-    [picDetails addObject:@"GalleryDetail2"];
-    [picDetails addObject:@"GalleryDetail3"];
-    [picDetails addObject:@"GalleryDetail4"];
-
-    
     CGRect galleryRect;
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
         galleryRect = CGRectMake(0, 0, 320, 180);
     } else {
         galleryRect = CGRectMake(0, 40, 320, 180);
     }
-    scroller =[[EScrollerView alloc] initWithFrameRect:galleryRect ImageArray:[NSArray arrayWithObjects:@"gallery1",@"gallery0",@"gallery2", @"gallery3",@"gallery4", nil] TitleArray:[NSArray arrayWithObjects:@"新闻1",@"新闻2",@"新闻3", @"新闻4", @"新闻5", nil]];
+    scroller =[[EScrollerView alloc] initWithFrameRect:galleryRect ImageArray:[NSArray arrayWithObjects:@"gallery1",@"gallery0",@"gallery2", @"gallery3",@"gallery4",@"gallery5", nil] TitleArray:[NSArray arrayWithObjects:@"新闻1",@"新闻2",@"新闻3", @"新闻4", @"新闻5", @"新闻6", nil]];
     scroller.delegate = self;
     
     galleryTimes = 0;
