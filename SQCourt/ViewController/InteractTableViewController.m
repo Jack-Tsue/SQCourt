@@ -33,8 +33,11 @@
         LoginViewController *loginVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginView"];
         UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:loginVC];
         [self presentModalViewController:navigation animated:NO];
-        
     }
+    if ([[[UserSingleton sharedInstance] getUserID] isEqualToString:@""]) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+
 }
 
 - (void)viewDidLoad

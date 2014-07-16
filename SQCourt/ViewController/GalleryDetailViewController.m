@@ -38,7 +38,7 @@
     [self.scrollView setScrollEnabled:YES];
     NSMutableArray *picArray = [[NSMutableArray alloc] init];
     UIImage *galleryImg0 = [UIImage imageNamed:@"detail0"];
-    UIImage *galleryImg1 = [UIImage imageNamed:@"detail1"];
+    UIImage *galleryImg1 = [UIImage imageNamed:@"detail11"];
     UIImage *galleryImg2 = [UIImage imageNamed:@"detail2"];
     UIImage *galleryImg3 = [UIImage imageNamed:@"detail3"];
     UIImage *galleryImg4 = [UIImage imageNamed:@"detail4"];
