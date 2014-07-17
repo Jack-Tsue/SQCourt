@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "JSMessagesViewController.h"
-#import "SQConversation.h"
 #import "MBProgressHUD.h"
+
+@class SQConversation;
 
 @interface ChatViewController : JSMessagesViewController <JSMessagesViewDelegate, JSMessagesViewDataSource, MBProgressHUDDelegate, NSXMLParserDelegate>
 @property (nonatomic, retain) SQConversation *conversation;

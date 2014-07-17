@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TPKeyboardAvoidingScrollView.h"
 #import "MBProgressHUD.h"
+
+@class TPKeyboardAvoidingScrollView;
 
 @interface ContactViewController : UIViewController<MBProgressHUDDelegate, NSXMLParserDelegate, UIAlertViewDelegate> {
     MBProgressHUD *loadingHud;

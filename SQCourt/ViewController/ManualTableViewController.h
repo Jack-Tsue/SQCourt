@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SQTopic.h"
+@class SQTopic;
 
 @interface ManualTableViewController : UITableViewController <NSXMLParserDelegate>
 {

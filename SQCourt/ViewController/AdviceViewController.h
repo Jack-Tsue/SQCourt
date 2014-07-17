@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SQAdvice.h"
 #import "MBProgressHUD.h"
+
+@class SQAdvice;
 
 @interface AdviceViewController : UITableViewController<MBProgressHUDDelegate, NSXMLParserDelegate>
 @property (nonatomic, strong) SQAdvice *advice;

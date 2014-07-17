@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SQProcess.h"
 #import "URBMediaFocusViewController.h"
+@class SQProcess;
 
 @interface DetailViewController : UIViewController <URBMediaFocusViewControllerDelegate, NSURLConnectionDataDelegate>
 @property (nonatomic, retain) SQProcess *process;

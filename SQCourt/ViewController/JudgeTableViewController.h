@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
-#import "SQJudge.h"
+
+@class SQJudge;
 
 @interface JudgeTableViewController : UITableViewController <MBProgressHUDDelegate, NSXMLParserDelegate> {
     MBProgressHUD *HUD;
