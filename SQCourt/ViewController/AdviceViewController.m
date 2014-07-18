@@ -11,6 +11,7 @@
 #import "BasicInfoCell.h"
 #import "SQAdviceReply.h"
 #import "Macro.h"
+#import "SQAdvice.h"
 
 @interface AdviceViewController (){
     MBProgressHUD *loadingHud;

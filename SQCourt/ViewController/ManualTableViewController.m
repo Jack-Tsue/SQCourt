@@ -8,6 +8,7 @@
 
 #import "ManualTableViewController.h"
 #import "ProcessViewController.h"
+#import "SQTopic.h"
 
 @interface ManualTableViewController ()
 

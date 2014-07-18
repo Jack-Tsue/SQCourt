@@ -12,6 +12,7 @@
 #import "KeychainItemWrapper.h"
 #import "LoginViewController.h"
 #import "SSKeyChain.h"
+#import "TPKeyboardAvoidingScrollView.h"
 
 @interface ContactViewController ()
 

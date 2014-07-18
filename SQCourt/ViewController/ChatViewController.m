@@ -11,6 +11,7 @@
 #import "UserSingleton.h"
 #import "JudgeSingleton.h"
 #import "SQChat.h"
+#import "SQConversation.h"
 #import "KeychainItemWrapper.h"
 
 @interface ChatViewController () {

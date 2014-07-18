@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "SQProcess.h"
 
 @interface DetailViewController ()
 @property (nonatomic, strong) UIImageView *localThumbnailView;

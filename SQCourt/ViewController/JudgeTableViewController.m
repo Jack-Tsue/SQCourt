@@ -12,6 +12,8 @@
 #import "UserSingleton.h"
 #import "ChatViewController.h"
 #import "Macro.h"
+#import "SQJudge.h"
+#import "SQConversation.h"
 #import "LoginWithCaseIDViewController.h"
 #import "SSKeychain.h"
 
