@@ -46,7 +46,10 @@
     self.tableView.backgroundView = [[UIView alloc]init];
     self.tableView.backgroundColor = [UIColor whiteColor];
     loginVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginView"];
-    [loginVC loginMuted];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [loginVC loginMuted];
+    });
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

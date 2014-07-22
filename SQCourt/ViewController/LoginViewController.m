@@ -47,7 +47,7 @@
 
     NSArray *accounts = [SSKeychain accountsForService:kSSServiceName];
     for (NSDictionary *dictionary in accounts) {
-        NSLog(@"%@", dictionary);
+//        NSLog(@"%@", dictionary);
         username = [dictionary objectForKey:@"acct"];
         password = [SSKeychain passwordForService:kSSServiceName account:username];
 	}
@@ -56,8 +56,9 @@
 //        [self login];
 //    }
 
-    if ([self login]) {
-    }
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self login];
+    });
     
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(keyboardHide:)];
     //设置成NO表示当前控件响应后会传播到其他控件上，默认为YES。
@@ -135,11 +136,11 @@
     
     NSString *postStr = [NSString stringWithFormat:@"%@userlogin.do?username=%@&password=%@", INTERFACE_ADDRESS,username, password];
     NSURL *url = [NSURL URLWithString:[postStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    NSLog(@"url: %@",url);
+//    NSLog(@"url: %@",url);
     NSData *xmlData = [NSData dataWithContentsOfURL:url];
     NSString *_xmlContent=[[NSString alloc] initWithData:xmlData encoding:NSUTF8StringEncoding];
 
-    NSLog(@"recieved: %@", _xmlContent);
+//    NSLog(@"recieved: %@", _xmlContent);
     
     
     
@@ -173,17 +174,17 @@
     
     NSArray *accounts = [SSKeychain accountsForService:kSSServiceName];
     for (NSDictionary *dictionary in accounts) {
-        NSLog(@"%@", dictionary);
+//        NSLog(@"%@", dictionary);
         username = [dictionary objectForKey:@"acct"];
 	}
 
     NSString *postStr = [NSString stringWithFormat:@"%@userlogin.do?username=%@&password=%@", INTERFACE_ADDRESS,username, password];
     NSURL *url = [NSURL URLWithString:[postStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    NSLog(@"url: %@",url);
+//    NSLog(@"url: %@",url);
     NSData *xmlData = [NSData dataWithContentsOfURL:url];
     NSString *_xmlContent=[[NSString alloc] initWithData:xmlData encoding:NSUTF8StringEncoding];
     
-    NSLog(@"recieved: %@", _xmlContent);
+//    NSLog(@"recieved: %@", _xmlContent);
     
     
     

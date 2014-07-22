@@ -92,48 +92,58 @@
 
 - (void)loadConversations
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@getUserFghh.do?fydm=321300&userid=%@", INTERFACE_ADDRESS, [[UserSingleton sharedInstance] getUserID]]];
-    // NSLog(@"url: %@", url);
-    NSData *xmlData = [NSData dataWithContentsOfURL:url];
-    NSString *_xmlContent=[[NSString alloc] initWithData:xmlData encoding:NSUTF8StringEncoding];
-    // NSLog(@"recieved: %@", _xmlContent);
-    if (xmlData == nil) {
-        alert = [[UIAlertView alloc]
-                 initWithTitle:@"发生错误"
-                 message:@"连接时发生问题，请稍后再试！"
-                 delegate:self
-                 cancelButtonTitle:@"确定"
-                 otherButtonTitles:nil, nil];
-        [alert show];
-    } else {
-        NSXMLParser *parser=[[NSXMLParser alloc] initWithData:[_xmlContent dataUsingEncoding:NSUTF8StringEncoding]];
-        [parser setDelegate:self];
-        [parser parse];
-        [self.tableView reloadData];
-    }
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@getUserFghh.do?fydm=321300&userid=%@", INTERFACE_ADDRESS, [[UserSingleton sharedInstance] getUserID]]];
+        // NSLog(@"url: %@", url);
+        NSData *xmlData = [NSData dataWithContentsOfURL:url];
+        NSString *_xmlContent=[[NSString alloc] initWithData:xmlData encoding:NSUTF8StringEncoding];
+        // NSLog(@"recieved: %@", _xmlContent);
+        if (xmlData == nil) {
+            alert = [[UIAlertView alloc]
+                     initWithTitle:@"发生错误"
+                     message:@"连接时发生问题，请稍后再试！"
+                     delegate:self
+                     cancelButtonTitle:@"确定"
+                     otherButtonTitles:nil, nil];
+            [alert show];
+        } else {
+            NSXMLParser *parser=[[NSXMLParser alloc] initWithData:[_xmlContent dataUsingEncoding:NSUTF8StringEncoding]];
+            [parser setDelegate:self];
+            [parser parse];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
+        }
+
+    });
 }
 
 - (void)loadComments
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@getYjjyByUserid.do?userid=%@", INTERFACE_ADDRESS, [[UserSingleton sharedInstance] getUserID]]];
-    // NSLog(@"url: %@", url);
-    NSData *xmlData = [NSData dataWithContentsOfURL:url];
-    NSString *_xmlContent=[[NSString alloc] initWithData:xmlData encoding:NSUTF8StringEncoding];
-    // NSLog(@"recieved: %@", _xmlContent);
-    if (xmlData == nil) {
-        alert = [[UIAlertView alloc]
-                 initWithTitle:@"发生错误"
-                 message:@"连接时发生问题，请稍后再试！"
-                 delegate:self
-                 cancelButtonTitle:@"确定"
-                 otherButtonTitles:nil, nil];
-        [alert show];
-    } else {
-        NSXMLParser *parser=[[NSXMLParser alloc] initWithData:[_xmlContent dataUsingEncoding:NSUTF8StringEncoding]];
-        [parser setDelegate:self];
-        [parser parse];
-        [self.tableView reloadData];
-    }
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@getYjjyByUserid.do?userid=%@", INTERFACE_ADDRESS, [[UserSingleton sharedInstance] getUserID]]];
+        // NSLog(@"url: %@", url);
+        NSData *xmlData = [NSData dataWithContentsOfURL:url];
+        NSString *_xmlContent=[[NSString alloc] initWithData:xmlData encoding:NSUTF8StringEncoding];
+        // NSLog(@"recieved: %@", _xmlContent);
+        if (xmlData == nil) {
+            alert = [[UIAlertView alloc]
+                     initWithTitle:@"发生错误"
+                     message:@"连接时发生问题，请稍后再试！"
+                     delegate:self
+                     cancelButtonTitle:@"确定"
+                     otherButtonTitles:nil, nil];
+            [alert show];
+        } else {
+            NSXMLParser *parser=[[NSXMLParser alloc] initWithData:[_xmlContent dataUsingEncoding:NSUTF8StringEncoding]];
+            [parser setDelegate:self];
+            [parser parse];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
+        }
+    });
+    
 }
 
 - (void)didReceiveMemoryWarning
